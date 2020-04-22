@@ -1,8 +1,0 @@
-i clk24M
-m 0 0
-u 131 547
-p {p:clk24M}{t:r_lo[2:0].C}
-e ckid0_0 {t:r_lo[2:0].C} dff
-c ckid0_0 {p:clk24M} port Unsupported/too complex instance on clock path
-l 0 0 0 0 0
-r 0 0 0 0 0 0 0 0

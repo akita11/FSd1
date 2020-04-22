@@ -1,9 +1,0 @@
--d C:\Users\akita\Documents\FSd1\impl\synthesize\rev_1\FSd1.vm
--p GW1N-1-QFN48-6
--pn GW1N-LV1QN48C6/I5
--cst C:\Users\akita\Documents\FSd1\src\TangNano.cst
--cfg C:\Users\akita\Documents\FSd1\impl\pnr\device.cfg
--bit
--tr
--ph
--timing
