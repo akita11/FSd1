@@ -1,0 +1,1125 @@
+#Build: Synplify Pro (R) P-2019.03G-1-Beta1, Build 387R, Dec  3 2019
+#install: C:\Gowin\Gowin_V1.9.3Beta\SynplifyPro
+#OS: Windows 8 6.2
+#Hostname: LAPTOP-E0CJ65QR
+
+# Sun Apr 19 10:58:40 2020
+
+#Implementation: rev_1
+
+
+Copyright (C) 1994-2019 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: P-2019.03G-1-Beta1
+Install: C:\Gowin\Gowin_V1.9.3Beta\SynplifyPro
+OS: Windows 6.2
+
+Hostname: LAPTOP-E0CJ65QR
+
+Implementation : rev_1
+Synopsys HDL Compiler, Version comp2019q1p1, Build 391R, Built Dec  3 2019 09:16:34
+
+@N|Running in 64-bit mode
+###########################################################[
+
+Copyright (C) 1994-2019 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: P-2019.03G-1-Beta1
+Install: C:\Gowin\Gowin_V1.9.3Beta\SynplifyPro
+OS: Windows 6.2
+
+Hostname: LAPTOP-E0CJ65QR
+
+Implementation : rev_1
+Synopsys Verilog Compiler, Version comp2019q1p1, Build 391R, Built Dec  3 2019 09:16:34
+
+@N|Running in 64-bit mode
+@N: CG1349 :	| Running Verilog Compiler in System Verilog mode
+
+@N: CG1350 :	| Running Verilog Compiler in Multiple File Compilation Unit mode
+
+@I::"C:\Gowin\Gowin_V1.9.3Beta\SynplifyPro\lib\generic\gw1n.v" (library work)
+@I::"C:\Gowin\Gowin_V1.9.3Beta\SynplifyPro\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\Gowin\Gowin_V1.9.3Beta\SynplifyPro\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\Gowin\Gowin_V1.9.3Beta\SynplifyPro\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\Gowin\Gowin_V1.9.3Beta\SynplifyPro\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"C:\Users\akita\Documents\FSd1\src\main.v" (library work)
+@I::"C:\Users\akita\Documents\FSd1\src\uart.v" (library work)
+@I::"C:\Users\akita\Documents\FSd1\src\bin2bcd.v" (library work)
+Verilog syntax check successful!
+Selecting top level module FSd1
+@N: CG364 :"C:\Users\akita\Documents\FSd1\src\uart.v":48:7:48:9|Synthesizing module RX8 in library work.
+Running optimization stage 1 on RX8 .......
+@W: CL271 :"C:\Users\akita\Documents\FSd1\src\uart.v":75:4:75:9|Pruning unused bits 1 to 0 of rdata[9:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CG364 :"C:\Users\akita\Documents\FSd1\src\uart.v":5:7:5:9|Synthesizing module TX8 in library work.
+Running optimization stage 1 on TX8 .......
+@N: CG364 :"C:\Users\akita\Documents\FSd1\src\bin2bcd.v":29:7:29:13|Synthesizing module bin2bcd in library work.
+
+	Ndigit=32'b00000000000000000000000000001000
+   Generated name = bin2bcd_8s
+@N: CG364 :"C:\Users\akita\Documents\FSd1\src\bin2bcd.v":2:7:2:18|Synthesizing module bin2bcd_unit in library work.
+Running optimization stage 1 on bin2bcd_unit .......
+Running optimization stage 1 on bin2bcd_8s .......
+@N: CG364 :"C:\Users\akita\Documents\FSd1\src\main.v":1:7:1:10|Synthesizing module FSd1 in library work.
+@W: CG296 :"C:\Users\akita\Documents\FSd1\src\main.v":48:13:48:21|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"C:\Users\akita\Documents\FSd1\src\main.v":50:40:50:46|Referenced variable raw_cnt is not in sensitivity list.
+@W: CG290 :"C:\Users\akita\Documents\FSd1\src\main.v":53:32:53:38|Referenced variable sig_cnt is not in sensitivity list.
+@W: CG1340 :"C:\Users\akita\Documents\FSd1\src\main.v":119:66:119:91|Index into variable bcd_in_data could be out of range ; a simulation mismatch is possible.
+Running optimization stage 1 on FSd1 .......
+@W: CL169 :"C:\Users\akita\Documents\FSd1\src\main.v":61:4:61:9|Pruning unused register f_tx_data_ready. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\akita\Documents\FSd1\src\main.v":61:4:61:9|Pruning unused register bcd_in_data[23:0]. Make sure that there are no unused intermediate registers.
+Running optimization stage 2 on FSd1 .......
+@N: CL201 :"C:\Users\akita\Documents\FSd1\src\main.v":61:4:61:9|Trying to extract state machine for register rx_f_receiving.
+Running optimization stage 2 on bin2bcd_unit .......
+@N: CL201 :"C:\Users\akita\Documents\FSd1\src\bin2bcd.v":9:4:9:9|Trying to extract state machine for register bcd.
+Extracted state machine for register bcd
+State machine has 10 reachable states with original encodings of:
+   0000
+   0001
+   0010
+   0011
+   0100
+   0101
+   0110
+   0111
+   1000
+   1001
+Running optimization stage 2 on bin2bcd_8s .......
+Running optimization stage 2 on TX8 .......
+Running optimization stage 2 on RX8 .......
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: C:\Users\akita\Documents\FSd1\impl\synthesize\rev_1\synwork\layer0.rt.csv
+
+
+At c_ver Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 96MB peak: 98MB)
+
+Process took 0h:00m:05s realtime, 0h:00m:04s cputime
+
+Process completed successfully.
+# Sun Apr 19 10:58:46 2020
+
+###########################################################]
+###########################################################[
+
+Copyright (C) 1994-2019 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: P-2019.03G-1-Beta1
+Install: C:\Gowin\Gowin_V1.9.3Beta\SynplifyPro
+OS: Windows 6.2
+
+Hostname: LAPTOP-E0CJ65QR
+
+Implementation : rev_1
+Synopsys Synopsys Netlist Linker, Version comp2019q1p1, Build 391R, Built Dec  3 2019 09:16:34
+
+@N|Running in 64-bit mode
+@N: NF107 :"c:\users\akita\documents\fsd1\src\main.v":1:7:1:10|Selected library: work cell: FSd1 view verilog as top level
+@N: NF107 :"c:\users\akita\documents\fsd1\src\main.v":1:7:1:10|Selected library: work cell: FSd1 view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 87MB peak: 87MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Apr 19 10:58:46 2020
+
+###########################################################]
+
+For a summary of runtime and memory usage for all design units, please see file:
+==========================================================
+@L: C:\Users\akita\Documents\FSd1\impl\synthesize\rev_1\synwork\FSd1_comp.rt.csv
+
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:04s; Memory used current: 25MB peak: 25MB)
+
+Process took 0h:00m:06s realtime, 0h:00m:04s cputime
+
+Process completed successfully.
+# Sun Apr 19 10:58:46 2020
+
+###########################################################]
+###########################################################[
+
+Copyright (C) 1994-2019 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: P-2019.03G-1-Beta1
+Install: C:\Gowin\Gowin_V1.9.3Beta\SynplifyPro
+OS: Windows 6.2
+
+Hostname: LAPTOP-E0CJ65QR
+
+Implementation : rev_1
+Synopsys Synopsys Netlist Linker, Version comp2019q1p1, Build 391R, Built Dec  3 2019 09:16:34
+
+@N|Running in 64-bit mode
+@N: NF107 :"c:\users\akita\documents\fsd1\src\main.v":1:7:1:10|Selected library: work cell: FSd1 view verilog as top level
+@N: NF107 :"c:\users\akita\documents\fsd1\src\main.v":1:7:1:10|Selected library: work cell: FSd1 view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 87MB peak: 87MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Apr 19 10:58:48 2020
+
+###########################################################]
+Premap Report
+
+# Sun Apr 19 10:58:49 2020
+
+
+Copyright (C) 1994-2019 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: P-2019.03G-1-Beta1
+Install: C:\Gowin\Gowin_V1.9.3Beta\SynplifyPro
+OS: Windows 6.2
+
+Hostname: LAPTOP-E0CJ65QR
+
+Implementation : rev_1
+Synopsys Generic Technology Pre-mapping, Version mapgw2019q1p1, Build 007R, Built Dec  5 2019 10:27:23
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 116MB peak: 116MB)
+
+@A: MF827 |No constraint file specified.
+@L: C:\Users\akita\Documents\FSd1\impl\synthesize\rev_1\FSd1_scck.rpt 
+Printing clock  summary report in "C:\Users\akita\Documents\FSd1\impl\synthesize\rev_1\FSd1_scck.rpt" file 
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 125MB peak: 125MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 125MB peak: 125MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 125MB peak: 125MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 139MB)
+
+Encoding state machine bcd[9:0] (in view: work.bin2bcd_unit_7(verilog))
+original code -> new code
+   0000 -> 0000000001
+   0001 -> 0000000010
+   0010 -> 0000000100
+   0011 -> 0000001000
+   0100 -> 0000010000
+   0101 -> 0000100000
+   0110 -> 0001000000
+   0111 -> 0010000000
+   1000 -> 0100000000
+   1001 -> 1000000000
+@N: FX493 |Applying initial value "1" on instance bcd[0].
+@W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
+@N: FX493 |Applying initial value "0" on instance bcd[1].
+@N: FX493 |Applying initial value "0" on instance bcd[2].
+@N: FX493 |Applying initial value "0" on instance bcd[3].
+@N: FX493 |Applying initial value "0" on instance bcd[4].
+@N: FX493 |Applying initial value "0" on instance bcd[5].
+@N: FX493 |Applying initial value "0" on instance bcd[6].
+@N: FX493 |Applying initial value "0" on instance bcd[7].
+@N: FX493 |Applying initial value "0" on instance bcd[8].
+@N: FX493 |Applying initial value "0" on instance bcd[9].
+Encoding state machine bcd[9:0] (in view: work.bin2bcd_unit_6(verilog))
+original code -> new code
+   0000 -> 0000000001
+   0001 -> 0000000010
+   0010 -> 0000000100
+   0011 -> 0000001000
+   0100 -> 0000010000
+   0101 -> 0000100000
+   0110 -> 0001000000
+   0111 -> 0010000000
+   1000 -> 0100000000
+   1001 -> 1000000000
+@N: FX493 |Applying initial value "1" on instance bcd[0].
+@N: FX493 |Applying initial value "0" on instance bcd[1].
+@N: FX493 |Applying initial value "0" on instance bcd[2].
+@N: FX493 |Applying initial value "0" on instance bcd[3].
+@N: FX493 |Applying initial value "0" on instance bcd[4].
+@N: FX493 |Applying initial value "0" on instance bcd[5].
+@N: FX493 |Applying initial value "0" on instance bcd[6].
+@N: FX493 |Applying initial value "0" on instance bcd[7].
+@N: FX493 |Applying initial value "0" on instance bcd[8].
+@N: FX493 |Applying initial value "0" on instance bcd[9].
+Encoding state machine bcd[9:0] (in view: work.bin2bcd_unit_5(verilog))
+original code -> new code
+   0000 -> 0000000001
+   0001 -> 0000000010
+   0010 -> 0000000100
+   0011 -> 0000001000
+   0100 -> 0000010000
+   0101 -> 0000100000
+   0110 -> 0001000000
+   0111 -> 0010000000
+   1000 -> 0100000000
+   1001 -> 1000000000
+@N: FX493 |Applying initial value "1" on instance bcd[0].
+@N: FX493 |Applying initial value "0" on instance bcd[1].
+@N: FX493 |Applying initial value "0" on instance bcd[2].
+@N: FX493 |Applying initial value "0" on instance bcd[3].
+@N: FX493 |Applying initial value "0" on instance bcd[4].
+@N: FX493 |Applying initial value "0" on instance bcd[5].
+@N: FX493 |Applying initial value "0" on instance bcd[6].
+@N: FX493 |Applying initial value "0" on instance bcd[7].
+@N: FX493 |Applying initial value "0" on instance bcd[8].
+@N: FX493 |Applying initial value "0" on instance bcd[9].
+Encoding state machine bcd[9:0] (in view: work.bin2bcd_unit_4(verilog))
+original code -> new code
+   0000 -> 0000000001
+   0001 -> 0000000010
+   0010 -> 0000000100
+   0011 -> 0000001000
+   0100 -> 0000010000
+   0101 -> 0000100000
+   0110 -> 0001000000
+   0111 -> 0010000000
+   1000 -> 0100000000
+   1001 -> 1000000000
+@N: FX493 |Applying initial value "1" on instance bcd[0].
+@N: FX493 |Applying initial value "0" on instance bcd[1].
+@N: FX493 |Applying initial value "0" on instance bcd[2].
+@N: FX493 |Applying initial value "0" on instance bcd[3].
+@N: FX493 |Applying initial value "0" on instance bcd[4].
+@N: FX493 |Applying initial value "0" on instance bcd[5].
+@N: FX493 |Applying initial value "0" on instance bcd[6].
+@N: FX493 |Applying initial value "0" on instance bcd[7].
+@N: FX493 |Applying initial value "0" on instance bcd[8].
+@N: FX493 |Applying initial value "0" on instance bcd[9].
+Encoding state machine bcd[9:0] (in view: work.bin2bcd_unit_3(verilog))
+original code -> new code
+   0000 -> 0000000001
+   0001 -> 0000000010
+   0010 -> 0000000100
+   0011 -> 0000001000
+   0100 -> 0000010000
+   0101 -> 0000100000
+   0110 -> 0001000000
+   0111 -> 0010000000
+   1000 -> 0100000000
+   1001 -> 1000000000
+@N: FX493 |Applying initial value "1" on instance bcd[0].
+@N: FX493 |Applying initial value "0" on instance bcd[1].
+@N: FX493 |Applying initial value "0" on instance bcd[2].
+@N: FX493 |Applying initial value "0" on instance bcd[3].
+@N: FX493 |Applying initial value "0" on instance bcd[4].
+@N: FX493 |Applying initial value "0" on instance bcd[5].
+@N: FX493 |Applying initial value "0" on instance bcd[6].
+@N: FX493 |Applying initial value "0" on instance bcd[7].
+@N: FX493 |Applying initial value "0" on instance bcd[8].
+@N: FX493 |Applying initial value "0" on instance bcd[9].
+Encoding state machine bcd[9:0] (in view: work.bin2bcd_unit_2(verilog))
+original code -> new code
+   0000 -> 0000000001
+   0001 -> 0000000010
+   0010 -> 0000000100
+   0011 -> 0000001000
+   0100 -> 0000010000
+   0101 -> 0000100000
+   0110 -> 0001000000
+   0111 -> 0010000000
+   1000 -> 0100000000
+   1001 -> 1000000000
+@N: FX493 |Applying initial value "1" on instance bcd[0].
+@N: FX493 |Applying initial value "0" on instance bcd[1].
+@N: FX493 |Applying initial value "0" on instance bcd[2].
+@N: FX493 |Applying initial value "0" on instance bcd[3].
+@N: FX493 |Applying initial value "0" on instance bcd[4].
+@N: FX493 |Applying initial value "0" on instance bcd[5].
+@N: FX493 |Applying initial value "0" on instance bcd[6].
+@N: FX493 |Applying initial value "0" on instance bcd[7].
+@N: FX493 |Applying initial value "0" on instance bcd[8].
+@N: FX493 |Applying initial value "0" on instance bcd[9].
+Encoding state machine bcd[9:0] (in view: work.bin2bcd_unit_1(verilog))
+original code -> new code
+   0000 -> 0000000001
+   0001 -> 0000000010
+   0010 -> 0000000100
+   0011 -> 0000001000
+   0100 -> 0000010000
+   0101 -> 0000100000
+   0110 -> 0001000000
+   0111 -> 0010000000
+   1000 -> 0100000000
+   1001 -> 1000000000
+@N: FX493 |Applying initial value "1" on instance bcd[0].
+@N: FX493 |Applying initial value "0" on instance bcd[1].
+@N: FX493 |Applying initial value "0" on instance bcd[2].
+@N: FX493 |Applying initial value "0" on instance bcd[3].
+@N: FX493 |Applying initial value "0" on instance bcd[4].
+@N: FX493 |Applying initial value "0" on instance bcd[5].
+@N: FX493 |Applying initial value "0" on instance bcd[6].
+@N: FX493 |Applying initial value "0" on instance bcd[7].
+@N: FX493 |Applying initial value "0" on instance bcd[8].
+@N: FX493 |Applying initial value "0" on instance bcd[9].
+Encoding state machine bcd[9:0] (in view: work.bin2bcd_unit_0(verilog))
+original code -> new code
+   0000 -> 0000000001
+   0001 -> 0000000010
+   0010 -> 0000000100
+   0011 -> 0000001000
+   0100 -> 0000010000
+   0101 -> 0000100000
+   0110 -> 0001000000
+   0111 -> 0010000000
+   1000 -> 0100000000
+   1001 -> 1000000000
+@N: FX493 |Applying initial value "1" on instance bcd[0].
+@N: FX493 |Applying initial value "0" on instance bcd[1].
+@N: FX493 |Applying initial value "0" on instance bcd[2].
+@N: FX493 |Applying initial value "0" on instance bcd[3].
+@N: FX493 |Applying initial value "0" on instance bcd[4].
+@N: FX493 |Applying initial value "0" on instance bcd[5].
+@N: FX493 |Applying initial value "0" on instance bcd[6].
+@N: FX493 |Applying initial value "0" on instance bcd[7].
+@N: FX493 |Applying initial value "0" on instance bcd[8].
+@N: FX493 |Applying initial value "0" on instance bcd[9].
+
+Starting clock optimization phase (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 220MB peak: 220MB)
+
+
+Finished clock optimization phase (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 221MB peak: 221MB)
+
+
+Starting clock optimization report phase (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 221MB peak: 221MB)
+
+
+Finished clock optimization report phase (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 221MB peak: 221MB)
+
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 221MB peak: 221MB)
+
+
+
+Clock Summary
+******************
+
+          Start           Requested     Requested     Clock        Clock                     Clock
+Level     Clock           Frequency     Period        Type         Group                     Load 
+--------------------------------------------------------------------------------------------------
+0 -       FSd1|clk24M     142.9 MHz     6.999         inferred     Autoconstr_clkgroup_0     574  
+==================================================================================================
+
+
+
+Clock Load Summary
+***********************
+
+                Clock     Source           Clock Pin           Non-clock Pin     Non-clock Pin
+Clock           Load      Pin              Seq Example         Seq Example       Comb Example 
+----------------------------------------------------------------------------------------------
+FSd1|clk24M     574       clk24M(port)     mix_in_p\[0\].C     -                 -            
+==============================================================================================
+
+@W: MT529 :"c:\users\akita\documents\fsd1\src\uart.v":75:4:75:9|Found inferred clock FSd1|clk24M which controls 574 sequential elements including irx8.r_ready. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+
+ICG Latch Removal Summary:
+Number of ICG latches removed: 0
+Number of ICG latches not removed:	0
+
+
+@S |Clock Optimization Summary
+
+
+
+#### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
+
+1 non-gated/non-generated clock tree(s) driving 574 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+============================ Non-Gated/Non-Generated Clocks ============================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance 
+----------------------------------------------------------------------------------------
+@KP:ckid0_0       clk24M              port                   574        f_bcd_converting
+========================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######
+
+@N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file C:\Users\akita\Documents\FSd1\impl\synthesize\rev_1\FSd1.sap.
+
+Starting constraint checker (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:05s; Memory used current: 221MB peak: 221MB)
+
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:05s; Memory used current: 222MB peak: 222MB)
+
+
+Finished constraint checker (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:05s; Memory used current: 223MB peak: 223MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:05s; Memory used current: 143MB peak: 223MB)
+
+Process took 0h:00m:07s realtime, 0h:00m:06s cputime
+# Sun Apr 19 10:58:57 2020
+
+###########################################################]
+Map & Optimize Report
+
+# Sun Apr 19 10:58:57 2020
+
+
+Copyright (C) 1994-2019 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: P-2019.03G-1-Beta1
+Install: C:\Gowin\Gowin_V1.9.3Beta\SynplifyPro
+OS: Windows 6.2
+
+Hostname: LAPTOP-E0CJ65QR
+
+Implementation : rev_1
+Synopsys Generic Technology Mapper, Version mapgw2019q1p1, Build 007R, Built Dec  5 2019 10:27:23
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 116MB peak: 116MB)
+
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 117MB peak: 118MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 117MB peak: 118MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 119MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 133MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 215MB peak: 215MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N: MT206 |Auto Constrain mode is enabled
+@W: FA239 :"c:\users\akita\documents\fsd1\src\main.v":268:8:268:11|ROM data_h[6:0] (in view: work.FSd1(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@W: FA239 :"c:\users\akita\documents\fsd1\src\main.v":268:8:268:11|ROM data_h[6:0] (in view: work.FSd1(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@N: MO106 :"c:\users\akita\documents\fsd1\src\main.v":268:8:268:11|Found ROM data_h[6:0] (in view: work.FSd1(verilog)) with 19 words by 7 bits.
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 220MB peak: 220MB)
+
+@N: MO231 :"c:\users\akita\documents\fsd1\src\main.v":61:4:61:9|Found counter in view:work.FSd1(verilog) instance lo_cnt\[2\][15:0] 
+@N: MO231 :"c:\users\akita\documents\fsd1\src\main.v":61:4:61:9|Found counter in view:work.FSd1(verilog) instance lo_cnt\[1\][15:0] 
+@N: MO231 :"c:\users\akita\documents\fsd1\src\main.v":61:4:61:9|Found counter in view:work.FSd1(verilog) instance lo_cnt\[0\][15:0] 
+@N: MO231 :"c:\users\akita\documents\fsd1\src\main.v":61:4:61:9|Found counter in view:work.FSd1(verilog) instance sig_cnt_work\[2\][23:0] 
+@N: MO231 :"c:\users\akita\documents\fsd1\src\main.v":61:4:61:9|Found counter in view:work.FSd1(verilog) instance sig_cnt_work\[1\][23:0] 
+@N: MO231 :"c:\users\akita\documents\fsd1\src\main.v":61:4:61:9|Found counter in view:work.FSd1(verilog) instance sig_cnt_work\[0\][23:0] 
+@N: MO231 :"c:\users\akita\documents\fsd1\src\main.v":61:4:61:9|Found counter in view:work.FSd1(verilog) instance raw_cnt_work\[2\][15:0] 
+@N: MO231 :"c:\users\akita\documents\fsd1\src\main.v":61:4:61:9|Found counter in view:work.FSd1(verilog) instance raw_cnt_work\[1\][15:0] 
+@N: MO231 :"c:\users\akita\documents\fsd1\src\main.v":61:4:61:9|Found counter in view:work.FSd1(verilog) instance raw_cnt_work\[0\][15:0] 
+@N: MO231 :"c:\users\akita\documents\fsd1\src\main.v":61:4:61:9|Found counter in view:work.FSd1(verilog) instance tx_state[7:0] 
+@N: MO231 :"c:\users\akita\documents\fsd1\src\main.v":61:4:61:9|Found counter in view:work.FSd1(verilog) instance rx_byte[5:0] 
+@N: MO231 :"c:\users\akita\documents\fsd1\src\main.v":61:4:61:9|Found counter in view:work.FSd1(verilog) instance bcd_conversion_count[5:0] 
+@N: MF179 :|Found 17 by 17 bit equality operator ('==') _l0\.r_lo9 (in view: work.FSd1(verilog))
+@N: MF179 :|Found 17 by 17 bit equality operator ('==') _l2\.r_lo37 (in view: work.FSd1(verilog))
+@N: MF179 :|Found 17 by 17 bit equality operator ('==') _l1\.r_lo23 (in view: work.FSd1(verilog))
+
+Starting factoring (Real Time elapsed 0h:00m:12s; CPU Time elapsed 0h:00m:11s; Memory used current: 222MB peak: 222MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:11s; Memory used current: 233MB peak: 233MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:12s; Memory used current: 235MB peak: 236MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:13s; Memory used current: 235MB peak: 236MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:16s; CPU Time elapsed 0h:00m:15s; Memory used current: 235MB peak: 236MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:16s; CPU Time elapsed 0h:00m:15s; Memory used current: 235MB peak: 236MB)
+
+@N: MO106 :"c:\users\akita\documents\fsd1\src\main.v":292:8:292:11|Found ROM rx_data_b[3:0] (in view: work.FSd1(verilog)) with 22 words by 4 bits.
+
+Finished preparing to map (Real Time elapsed 0h:00m:17s; CPU Time elapsed 0h:00m:16s; Memory used current: 236MB peak: 236MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:18s; CPU Time elapsed 0h:00m:17s; Memory used current: 255MB peak: 255MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:17s		    -3.55ns		1057 /       574
+   2		0h:00m:17s		    -3.55ns		1044 /       574
+   3		0h:00m:17s		    -3.04ns		1052 /       574
+   4		0h:00m:18s		    -4.21ns		1052 /       574
+   5		0h:00m:18s		    -3.96ns		1051 /       574
+   6		0h:00m:18s		    -3.70ns		1051 /       574
+   7		0h:00m:18s		    -3.70ns		1051 /       574
+@N: FX271 :"c:\users\akita\documents\fsd1\src\main.v":61:4:61:9|Replicating instance bcd_state[1] (in view: work.FSd1(verilog)) with 58 loads 3 times to improve timing.
+@N: FX271 :"c:\users\akita\documents\fsd1\src\uart.v":15:4:15:9|Replicating instance itx8.r_busy (in view: work.FSd1(verilog)) with 27 loads 2 times to improve timing.
+@N: FX271 :"c:\users\akita\documents\fsd1\src\main.v":61:4:61:9|Replicating instance bcd_out_reg[13] (in view: work.FSd1(verilog)) with 4 loads 1 time to improve timing.
+@N: FX271 :"c:\users\akita\documents\fsd1\src\main.v":61:4:61:9|Replicating instance bcd_out_reg[12] (in view: work.FSd1(verilog)) with 4 loads 1 time to improve timing.
+@N: FX271 :"c:\users\akita\documents\fsd1\src\main.v":61:4:61:9|Replicating instance bcd_out_reg[14] (in view: work.FSd1(verilog)) with 4 loads 1 time to improve timing.
+@N: FX271 :"c:\users\akita\documents\fsd1\src\main.v":61:4:61:9|Replicating instance bcd_state[2] (in view: work.FSd1(verilog)) with 65 loads 3 times to improve timing.
+@N: FX271 :"c:\users\akita\documents\fsd1\src\main.v":61:4:61:9|Replicating instance f_bcd_data_ready (in view: work.FSd1(verilog)) with 8 loads 1 time to improve timing.
+@N: FX271 :"c:\users\akita\documents\fsd1\src\main.v":61:4:61:9|Replicating instance tx_start (in view: work.FSd1(verilog)) with 10 loads 1 time to improve timing.
+@N: FX271 :"c:\users\akita\documents\fsd1\src\main.v":61:4:61:9|Replicating instance bcd_state[0] (in view: work.FSd1(verilog)) with 34 loads 3 times to improve timing.
+Timing driven replication report
+Added 16 Registers via timing driven replication
+Added 12 LUTs via timing driven replication
+
+   8		0h:00m:21s		    -2.59ns		1072 /       590
+   9		0h:00m:21s		    -3.04ns		1071 /       590
+  10		0h:00m:21s		    -2.78ns		1071 /       590
+  11		0h:00m:21s		    -3.04ns		1069 /       590
+  12		0h:00m:21s		    -2.78ns		1070 /       590
+@N: FX271 :"c:\users\akita\documents\fsd1\src\main.v":61:4:61:9|Replicating instance f_bcd_converting (in view: work.FSd1(verilog)) with 88 loads 3 times to improve timing.
+Timing driven replication report
+Added 3 Registers via timing driven replication
+Added 0 LUTs via timing driven replication
+
+
+  13		0h:00m:22s		    -2.52ns		1062 /       593
+  14		0h:00m:22s		    -3.02ns		1062 /       593
+  15		0h:00m:22s		    -2.78ns		1062 /       593
+  16		0h:00m:22s		    -2.78ns		1062 /       593
+  17		0h:00m:22s		    -2.78ns		1062 /       593
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:24s; CPU Time elapsed 0h:00m:23s; Memory used current: 266MB peak: 267MB)
+
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:25s; CPU Time elapsed 0h:00m:24s; Memory used current: 267MB peak: 267MB)
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:26s; CPU Time elapsed 0h:00m:24s; Memory used current: 191MB peak: 267MB)
+
+Writing Analyst data base C:\Users\akita\Documents\FSd1\impl\synthesize\rev_1\synwork\FSd1_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:28s; CPU Time elapsed 0h:00m:26s; Memory used current: 266MB peak: 267MB)
+
+Writing Verilog Simulation files
+
+Writing scf file... (Real Time elapsed 0h:00m:31s; CPU Time elapsed 0h:00m:30s; Memory used current: 266MB peak: 267MB)
+
+@N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
+@N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
+
+Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:32s; CPU Time elapsed 0h:00m:30s; Memory used current: 266MB peak: 267MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:33s; CPU Time elapsed 0h:00m:32s; Memory used current: 264MB peak: 267MB)
+
+@W: MT420 |Found inferred clock FSd1|clk24M with period 11.47ns. Please declare a user-defined clock on port clk24M.
+
+
+##### START OF TIMING REPORT #####[
+# Timing report written on Sun Apr 19 10:59:31 2020
+#
+
+
+Top view:               FSd1
+Requested Frequency:    87.2 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: -2.024
+
+                   Requested     Estimated      Requested     Estimated                Clock        Clock                
+Starting Clock     Frequency     Frequency      Period        Period        Slack      Type         Group                
+-------------------------------------------------------------------------------------------------------------------------
+FSd1|clk24M        87.2 MHz      74.1 MHz       11.467        13.491        -2.024     inferred     Autoconstr_clkgroup_0
+System             100.0 MHz     1071.2 MHz     10.000        0.934         9.066      system       system_clkgroup      
+=========================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                    |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+-----------------------------------------------------------------------------------------------------------------
+Starting     Ending       |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+-----------------------------------------------------------------------------------------------------------------
+System       FSd1|clk24M  |  11.468      9.066   |  No paths    -      |  No paths    -      |  No paths    -    
+FSd1|clk24M  System       |  11.468      5.907   |  No paths    -      |  No paths    -      |  No paths    -    
+FSd1|clk24M  FSd1|clk24M  |  11.468      -2.024  |  No paths    -      |  No paths    -      |  No paths    -    
+=================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: FSd1|clk24M
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                      Starting                                                Arrival           
+Instance              Reference       Type      Pin     Net                   Time        Slack 
+                      Clock                                                                     
+------------------------------------------------------------------------------------------------
+tx_state[0]           FSd1|clk24M     DFFRE     Q       tx_state[0]           0.367       -2.024
+tx_state[2]           FSd1|clk24M     DFFRE     Q       tx_state[2]           0.367       -1.969
+tx_state[4]           FSd1|clk24M     DFFRE     Q       tx_state[4]           0.367       -1.814
+tx_state[5]           FSd1|clk24M     DFFRE     Q       tx_state[5]           0.367       -1.618
+tx_start_fast         FSd1|clk24M     DFFR      Q       tx_start_fast         0.367       -1.172
+itx8.r_busy_fast      FSd1|clk24M     DFFRE     Q       tx_busy_fast          0.367       -1.105
+raw_cnt\[0\][4]       FSd1|clk24M     DFFRE     Q       raw_cnt\[0\][4]       0.367       -1.085
+raw_cnt\[1\][4]       FSd1|clk24M     DFFRE     Q       raw_cnt\[1\][4]       0.367       -1.085
+bcd_state_fast[1]     FSd1|clk24M     DFFR      Q       bcd_state_fast[1]     0.367       -1.079
+tx_state[3]           FSd1|clk24M     DFFRE     Q       tx_state[3]           0.367       -1.022
+================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                   Starting                                               Required           
+Instance           Reference       Type     Pin     Net                   Time         Slack 
+                   Clock                                                                     
+---------------------------------------------------------------------------------------------
+data_b[0]          FSd1|clk24M     DFFE     D       data_b_43[0]          11.335       -2.024
+bcd_in             FSd1|clk24M     DFFE     D       N_629_i               11.335       -1.085
+data_b[3]          FSd1|clk24M     DFFE     D       N_630_i               11.335       -0.831
+data_b[1]          FSd1|clk24M     DFFE     D       N_632_i               11.335       -0.635
+data_b[2]          FSd1|clk24M     DFFE     D       N_631_i               11.335       -0.530
+r_lo[0]            FSd1|clk24M     DFF      D       r_lo_8[0]             11.335       0.165 
+r_lo[1]            FSd1|clk24M     DFF      D       r_lo_15[1]            11.335       0.165 
+r_lo[2]            FSd1|clk24M     DFF      D       r_lo_22[2]            11.335       0.165 
+lo_cnt\[0\][0]     FSd1|clk24M     DFFR     D       lo_cnt\[0\]_lm[0]     11.335       0.656 
+lo_cnt\[0\][1]     FSd1|clk24M     DFFR     D       lo_cnt\[0\]_lm[1]     11.335       0.656 
+=============================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      11.467
+    - Setup time:                            0.133
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         11.335
+
+    - Propagation time:                      13.358
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -2.024
+
+    Number of logic level(s):                7
+    Starting point:                          tx_state[0] / Q
+    Ending point:                            data_b[0] / D
+    The start point is clocked by            FSd1|clk24M [rising] on pin CLK
+    The end   point is clocked by            FSd1|clk24M [rising] on pin CLK
+
+Instance / Net                      Pin      Pin               Arrival     No. of    
+Name                      Type      Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------
+tx_state[0]               DFFRE     Q        Out     0.367     0.367       -         
+tx_state[0]               Net       -        -       1.204     -           33        
+itx8.m59_1_6_1_0          LUT4      I0       In      -         1.571       -         
+itx8.m59_1_6_1_0          LUT4      F        Out     1.032     2.603       -         
+m59_1_6_1                 Net       -        -       0.766     -           1         
+itx8.m59_1_6              LUT4      I0       In      -         3.369       -         
+itx8.m59_1_6              LUT4      F        Out     1.032     4.401       -         
+m59_1_6                   Net       -        -       0.766     -           1         
+itx8.m60_mb_N_4L6         LUT3      I2       In      -         5.166       -         
+itx8.m60_mb_N_4L6         LUT3      F        Out     0.822     5.988       -         
+m60_mb_N_4L6              Net       -        -       0.766     -           1         
+itx8.m60_mb               LUT4      I0       In      -         6.754       -         
+itx8.m60_mb               LUT4      F        Out     1.032     7.786       -         
+data_b_43_sm3             Net       -        -       1.021     -           7         
+itx8.data_b_43_d_s[0]     LUT4      I1       In      -         8.807       -         
+itx8.data_b_43_d_s[0]     LUT4      F        Out     1.099     9.906       -         
+data_b_43_d_s[0]          Net       -        -       0.766     -           1         
+itx8.data_b_43_1_0[0]     LUT4      I1       In      -         10.671      -         
+itx8.data_b_43_1_0[0]     LUT4      F        Out     1.099     11.771      -         
+data_b_43_1[0]            Net       -        -       0.766     -           1         
+itx8.data_b_43[0]         LUT3      I2       In      -         12.536      -         
+itx8.data_b_43[0]         LUT3      F        Out     0.822     13.358      -         
+data_b_43[0]              Net       -        -       0.000     -           1         
+data_b[0]                 DFFE      D        In      -         13.358      -         
+=====================================================================================
+Total path delay (propagation time + setup) of 13.491 is 7.438(55.1%) logic and 6.053(44.9%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 2: 
+      Requested Period:                      11.467
+    - Setup time:                            0.133
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         11.335
+
+    - Propagation time:                      13.303
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -1.969
+
+    Number of logic level(s):                7
+    Starting point:                          tx_state[2] / Q
+    Ending point:                            data_b[0] / D
+    The start point is clocked by            FSd1|clk24M [rising] on pin CLK
+    The end   point is clocked by            FSd1|clk24M [rising] on pin CLK
+
+Instance / Net                      Pin      Pin               Arrival     No. of    
+Name                      Type      Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------
+tx_state[2]               DFFRE     Q        Out     0.367     0.367       -         
+tx_state[2]               Net       -        -       1.082     -           17        
+itx8.m59_1_6_1_0          LUT4      I1       In      -         1.449       -         
+itx8.m59_1_6_1_0          LUT4      F        Out     1.099     2.548       -         
+m59_1_6_1                 Net       -        -       0.766     -           1         
+itx8.m59_1_6              LUT4      I0       In      -         3.314       -         
+itx8.m59_1_6              LUT4      F        Out     1.032     4.346       -         
+m59_1_6                   Net       -        -       0.766     -           1         
+itx8.m60_mb_N_4L6         LUT3      I2       In      -         5.111       -         
+itx8.m60_mb_N_4L6         LUT3      F        Out     0.822     5.933       -         
+m60_mb_N_4L6              Net       -        -       0.766     -           1         
+itx8.m60_mb               LUT4      I0       In      -         6.699       -         
+itx8.m60_mb               LUT4      F        Out     1.032     7.731       -         
+data_b_43_sm3             Net       -        -       1.021     -           7         
+itx8.data_b_43_d_s[0]     LUT4      I1       In      -         8.752       -         
+itx8.data_b_43_d_s[0]     LUT4      F        Out     1.099     9.851       -         
+data_b_43_d_s[0]          Net       -        -       0.766     -           1         
+itx8.data_b_43_1_0[0]     LUT4      I1       In      -         10.617      -         
+itx8.data_b_43_1_0[0]     LUT4      F        Out     1.099     11.716      -         
+data_b_43_1[0]            Net       -        -       0.766     -           1         
+itx8.data_b_43[0]         LUT3      I2       In      -         12.481      -         
+itx8.data_b_43[0]         LUT3      F        Out     0.822     13.303      -         
+data_b_43[0]              Net       -        -       0.000     -           1         
+data_b[0]                 DFFE      D        In      -         13.303      -         
+=====================================================================================
+Total path delay (propagation time + setup) of 13.436 is 7.505(55.9%) logic and 5.931(44.1%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 3: 
+      Requested Period:                      11.467
+    - Setup time:                            0.133
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         11.335
+
+    - Propagation time:                      13.148
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -1.814
+
+    Number of logic level(s):                7
+    Starting point:                          tx_state[4] / Q
+    Ending point:                            data_b[0] / D
+    The start point is clocked by            FSd1|clk24M [rising] on pin CLK
+    The end   point is clocked by            FSd1|clk24M [rising] on pin CLK
+
+Instance / Net                      Pin      Pin               Arrival     No. of    
+Name                      Type      Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------
+tx_state[4]               DFFRE     Q        Out     0.367     0.367       -         
+tx_state[4]               Net       -        -       1.204     -           35        
+itx8.m59_1_6_1_0          LUT4      I2       In      -         1.571       -         
+itx8.m59_1_6_1_0          LUT4      F        Out     0.822     2.393       -         
+m59_1_6_1                 Net       -        -       0.766     -           1         
+itx8.m59_1_6              LUT4      I0       In      -         3.159       -         
+itx8.m59_1_6              LUT4      F        Out     1.032     4.191       -         
+m59_1_6                   Net       -        -       0.766     -           1         
+itx8.m60_mb_N_4L6         LUT3      I2       In      -         4.956       -         
+itx8.m60_mb_N_4L6         LUT3      F        Out     0.822     5.778       -         
+m60_mb_N_4L6              Net       -        -       0.766     -           1         
+itx8.m60_mb               LUT4      I0       In      -         6.544       -         
+itx8.m60_mb               LUT4      F        Out     1.032     7.576       -         
+data_b_43_sm3             Net       -        -       1.021     -           7         
+itx8.data_b_43_d_s[0]     LUT4      I1       In      -         8.597       -         
+itx8.data_b_43_d_s[0]     LUT4      F        Out     1.099     9.696       -         
+data_b_43_d_s[0]          Net       -        -       0.766     -           1         
+itx8.data_b_43_1_0[0]     LUT4      I1       In      -         10.462      -         
+itx8.data_b_43_1_0[0]     LUT4      F        Out     1.099     11.561      -         
+data_b_43_1[0]            Net       -        -       0.766     -           1         
+itx8.data_b_43[0]         LUT3      I2       In      -         12.326      -         
+itx8.data_b_43[0]         LUT3      F        Out     0.822     13.148      -         
+data_b_43[0]              Net       -        -       0.000     -           1         
+data_b[0]                 DFFE      D        In      -         13.148      -         
+=====================================================================================
+Total path delay (propagation time + setup) of 13.281 is 7.228(54.4%) logic and 6.053(45.6%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 4: 
+      Requested Period:                      11.467
+    - Setup time:                            0.133
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         11.335
+
+    - Propagation time:                      12.952
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -1.618
+
+    Number of logic level(s):                7
+    Starting point:                          tx_state[5] / Q
+    Ending point:                            data_b[0] / D
+    The start point is clocked by            FSd1|clk24M [rising] on pin CLK
+    The end   point is clocked by            FSd1|clk24M [rising] on pin CLK
+
+Instance / Net                      Pin      Pin               Arrival     No. of    
+Name                      Type      Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------
+tx_state[5]               DFFRE     Q        Out     0.367     0.367       -         
+tx_state[5]               Net       -        -       1.204     -           33        
+itx8.m59_1_6_1_0          LUT4      I3       In      -         1.571       -         
+itx8.m59_1_6_1_0          LUT4      F        Out     0.626     2.197       -         
+m59_1_6_1                 Net       -        -       0.766     -           1         
+itx8.m59_1_6              LUT4      I0       In      -         2.963       -         
+itx8.m59_1_6              LUT4      F        Out     1.032     3.995       -         
+m59_1_6                   Net       -        -       0.766     -           1         
+itx8.m60_mb_N_4L6         LUT3      I2       In      -         4.760       -         
+itx8.m60_mb_N_4L6         LUT3      F        Out     0.822     5.582       -         
+m60_mb_N_4L6              Net       -        -       0.766     -           1         
+itx8.m60_mb               LUT4      I0       In      -         6.348       -         
+itx8.m60_mb               LUT4      F        Out     1.032     7.380       -         
+data_b_43_sm3             Net       -        -       1.021     -           7         
+itx8.data_b_43_d_s[0]     LUT4      I1       In      -         8.401       -         
+itx8.data_b_43_d_s[0]     LUT4      F        Out     1.099     9.500       -         
+data_b_43_d_s[0]          Net       -        -       0.766     -           1         
+itx8.data_b_43_1_0[0]     LUT4      I1       In      -         10.266      -         
+itx8.data_b_43_1_0[0]     LUT4      F        Out     1.099     11.365      -         
+data_b_43_1[0]            Net       -        -       0.766     -           1         
+itx8.data_b_43[0]         LUT3      I2       In      -         12.130      -         
+itx8.data_b_43[0]         LUT3      F        Out     0.822     12.952      -         
+data_b_43[0]              Net       -        -       0.000     -           1         
+data_b[0]                 DFFE      D        In      -         12.952      -         
+=====================================================================================
+Total path delay (propagation time + setup) of 13.085 is 7.032(53.7%) logic and 6.053(46.3%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 5: 
+      Requested Period:                      11.467
+    - Setup time:                            0.133
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         11.335
+
+    - Propagation time:                      12.952
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -1.618
+
+    Number of logic level(s):                7
+    Starting point:                          tx_state[0] / Q
+    Ending point:                            data_b[0] / D
+    The start point is clocked by            FSd1|clk24M [rising] on pin CLK
+    The end   point is clocked by            FSd1|clk24M [rising] on pin CLK
+
+Instance / Net                            Pin      Pin               Arrival     No. of    
+Name                            Type      Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------
+tx_state[0]                     DFFRE     Q        Out     0.367     0.367       -         
+tx_state[0]                     Net       -        -       1.204     -           33        
+itx8.m57_m9_i_N_3L3_N_2L1_0     LUT4      I0       In      -         1.571       -         
+itx8.m57_m9_i_N_3L3_N_2L1_0     LUT4      F        Out     1.032     2.603       -         
+m57_m9_i_N_3L3_N_2L1_0          Net       -        -       0.766     -           1         
+itx8.m60_N_4L5                  LUT4      I0       In      -         3.369       -         
+itx8.m60_N_4L5                  LUT4      F        Out     1.032     4.401       -         
+m60_N_4L5                       Net       -        -       0.766     -           1         
+itx8.m60_rn                     LUT4      I3       In      -         5.166       -         
+itx8.m60_rn                     LUT4      F        Out     0.626     5.792       -         
+m60_rn_0                        Net       -        -       0.766     -           1         
+itx8.m60_mb                     LUT4      I2       In      -         6.558       -         
+itx8.m60_mb                     LUT4      F        Out     0.822     7.380       -         
+data_b_43_sm3                   Net       -        -       1.021     -           7         
+itx8.data_b_43_d_s[0]           LUT4      I1       In      -         8.401       -         
+itx8.data_b_43_d_s[0]           LUT4      F        Out     1.099     9.500       -         
+data_b_43_d_s[0]                Net       -        -       0.766     -           1         
+itx8.data_b_43_1_0[0]           LUT4      I1       In      -         10.266      -         
+itx8.data_b_43_1_0[0]           LUT4      F        Out     1.099     11.365      -         
+data_b_43_1[0]                  Net       -        -       0.766     -           1         
+itx8.data_b_43[0]               LUT3      I2       In      -         12.130      -         
+itx8.data_b_43[0]               LUT3      F        Out     0.822     12.952      -         
+data_b_43[0]                    Net       -        -       0.000     -           1         
+data_b[0]                       DFFE      D        In      -         12.952      -         
+===========================================================================================
+Total path delay (propagation time + setup) of 13.085 is 7.032(53.7%) logic and 6.053(46.3%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+
+====================================
+Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                         Starting                                                     Arrival           
+Instance                                 Reference     Type     Pin     Net                           Time        Slack 
+                                         Clock                                                                          
+------------------------------------------------------------------------------------------------------------------------
+rst_n_c_i                                System        INV      O       rst_n_c_i                     0.000       9.066 
+f_bcd_converting_l                       System        INV      O       f_bcd_converting_l            0.000       10.313
+f_bcd_converting_l_0                     System        INV      O       f_bcd_converting_l_0          0.000       10.313
+f_bcd_converting_l_1                     System        INV      O       f_bcd_converting_l_1          0.000       10.313
+f_bcd_converting_rep1_l                  System        INV      O       f_bcd_converting_rep1_l       0.000       10.313
+f_bcd_converting_rep1_l_0                System        INV      O       f_bcd_converting_rep1_l_0     0.000       10.313
+f_bcd_converting_rep2_l                  System        INV      O       f_bcd_converting_rep2_l       0.000       10.313
+f_bcd_converting_rep2_l_0                System        INV      O       f_bcd_converting_rep2_l_0     0.000       10.313
+f_bcd_converting_rep2_l_1                System        INV      O       f_bcd_converting_rep2_l_1     0.000       10.313
+i0.genblk1\[2\]\.d.un4_ModOut_axb1_i     System        INV      O       un4_ModOut_axb1_i             0.000       10.313
+========================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                Starting                                       Required          
+Instance        Reference     Type     Pin       Net           Time         Slack
+                Clock                                                            
+---------------------------------------------------------------------------------
+itx8.cnt[0]     System        DFFR     RESET     rst_n_c_i     11.335       9.066
+irx8.cnt[0]     System        DFFR     RESET     rst_n_c_i     11.335       9.066
+itx8.cnt[1]     System        DFFR     RESET     rst_n_c_i     11.335       9.066
+irx8.cnt[1]     System        DFFR     RESET     rst_n_c_i     11.335       9.066
+irx8.cnt[2]     System        DFFR     RESET     rst_n_c_i     11.335       9.066
+itx8.cnt[2]     System        DFFR     RESET     rst_n_c_i     11.335       9.066
+irx8.cnt[3]     System        DFFR     RESET     rst_n_c_i     11.335       9.066
+itx8.cnt[3]     System        DFFR     RESET     rst_n_c_i     11.335       9.066
+irx8.cnt[4]     System        DFFR     RESET     rst_n_c_i     11.335       9.066
+itx8.cnt[4]     System        DFFR     RESET     rst_n_c_i     11.335       9.066
+=================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      11.467
+    - Setup time:                            0.133
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         11.335
+
+    - Propagation time:                      2.268
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 9.067
+
+    Number of logic level(s):                0
+    Starting point:                          rst_n_c_i / O
+    Ending point:                            itx8.cnt[0] / RESET
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            FSd1|clk24M [rising] on pin CLK
+
+Instance / Net              Pin       Pin               Arrival     No. of    
+Name               Type     Name      Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------
+rst_n_c_i          INV      O         Out     0.000     0.000       -         
+rst_n_c_i          Net      -         -       2.268     -           354       
+itx8.cnt[0]        DFFR     RESET     In      -         2.268       -         
+==============================================================================
+Total path delay (propagation time + setup) of 2.401 is 0.133(5.5%) logic and 2.268(94.5%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+
+Finished final timing analysis (Real Time elapsed 0h:00m:34s; CPU Time elapsed 0h:00m:32s; Memory used current: 265MB peak: 267MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:34s; CPU Time elapsed 0h:00m:32s; Memory used current: 265MB peak: 267MB)
+
+---------------------------------------
+Resource Usage Report for FSd1 
+
+Mapping to part: gw1n_1qfn48-6
+Cell usage:
+ALU             335 uses
+DFF             42 uses
+DFFE            75 uses
+DFFR            250 uses
+DFFRE           205 uses
+DFFS            8 uses
+DFFSE           13 uses
+GSR             1 use
+INV             31 uses
+MUX2_LUT5       32 uses
+MUX2_LUT6       10 uses
+MUX2_LUT7       1 use
+LUT2            306 uses
+LUT3            196 uses
+LUT4            322 uses
+
+I/O ports: 18
+I/O primitives: 18
+IBUF           9 uses
+OBUF           9 uses
+
+I/O Register bits:                  0
+Register bits not including I/Os:   593 of 864 (68%)
+Total load per clock:
+   FSd1|clk24M: 593
+
+@S |Mapping Summary:
+Total  LUTs: 824 (71%)
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:35s; CPU Time elapsed 0h:00m:32s; Memory used current: 75MB peak: 267MB)
+
+Process took 0h:00m:35s realtime, 0h:00m:33s cputime
+# Sun Apr 19 10:59:33 2020
+
+###########################################################]

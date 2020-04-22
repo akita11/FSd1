@@ -1,0 +1,15 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N: CG1349 :	| Running Verilog Compiler in System Verilog mode
+@N: CG1350 :	| Running Verilog Compiler in Multiple File Compilation Unit mode
+@N: CG364 :"C:\Users\akita\Documents\FSd1\src\uart.v":48:7:48:9|Synthesizing module RX8 in library work.
+@N: CG364 :"C:\Users\akita\Documents\FSd1\src\uart.v":5:7:5:9|Synthesizing module TX8 in library work.
+@N: CG364 :"C:\Users\akita\Documents\FSd1\src\bin2bcd.v":29:7:29:13|Synthesizing module bin2bcd in library work.
+@N: CG364 :"C:\Users\akita\Documents\FSd1\src\bin2bcd.v":2:7:2:18|Synthesizing module bin2bcd_unit in library work.
+@N: CG364 :"C:\Users\akita\Documents\FSd1\src\main.v":1:7:1:10|Synthesizing module FSd1 in library work.
+@N: CL201 :"C:\Users\akita\Documents\FSd1\src\main.v":54:4:54:9|Trying to extract state machine for register rx_f_receiving.
+@N: CL201 :"C:\Users\akita\Documents\FSd1\src\bin2bcd.v":9:4:9:9|Trying to extract state machine for register bcd.
+@N|Running in 64-bit mode
+@N: NF107 :"c:\users\akita\documents\fsd1\src\main.v":1:7:1:10|Selected library: work cell: FSd1 view verilog as top level
+@N: NF107 :"c:\users\akita\documents\fsd1\src\main.v":1:7:1:10|Selected library: work cell: FSd1 view verilog as top level
+

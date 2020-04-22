@@ -1,0 +1,606 @@
+# Sun Apr 19 15:02:42 2020
+
+
+Copyright (C) 1994-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: P-2019.09G
+Install: C:\Gowin\Gowin_V1.9.5Beta\SynplifyPro
+OS: Windows 6.2
+
+Hostname: IFDLTPY
+
+Implementation : rev_1
+Synopsys Generic Technology Mapper, Version mapgw, Build 1564R, Built Mar  4 2020 10:56:38
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 117MB peak: 117MB)
+
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 118MB peak: 128MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 128MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 120MB peak: 128MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 135MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 216MB peak: 216MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N: MT206 |Auto Constrain mode is enabled
+@W: FA239 :"c:\users\akita\documents\fsd1\src\main.v":232:8:232:11|ROM data_h[6:0] (in view: work.FSd1(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@W: FA239 :"c:\users\akita\documents\fsd1\src\main.v":232:8:232:11|ROM data_h[6:0] (in view: work.FSd1(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@N: MO106 :"c:\users\akita\documents\fsd1\src\main.v":232:8:232:11|Found ROM data_h[6:0] (in view: work.FSd1(verilog)) with 19 words by 7 bits.
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 221MB peak: 221MB)
+
+@N: MO231 :"c:\users\akita\documents\fsd1\src\main.v":54:4:54:9|Found counter in view:work.FSd1(verilog) instance lo_cnt\[2\][11:0] 
+@N: MO231 :"c:\users\akita\documents\fsd1\src\main.v":54:4:54:9|Found counter in view:work.FSd1(verilog) instance lo_cnt\[1\][11:0] 
+@N: MO231 :"c:\users\akita\documents\fsd1\src\main.v":54:4:54:9|Found counter in view:work.FSd1(verilog) instance lo_cnt\[0\][11:0] 
+@N: MO231 :"c:\users\akita\documents\fsd1\src\main.v":54:4:54:9|Found counter in view:work.FSd1(verilog) instance sig_cnt_work\[2\][23:0] 
+@N: MO231 :"c:\users\akita\documents\fsd1\src\main.v":54:4:54:9|Found counter in view:work.FSd1(verilog) instance sig_cnt_work\[1\][23:0] 
+@N: MO231 :"c:\users\akita\documents\fsd1\src\main.v":54:4:54:9|Found counter in view:work.FSd1(verilog) instance sig_cnt_work\[0\][23:0] 
+@N: MO231 :"c:\users\akita\documents\fsd1\src\main.v":54:4:54:9|Found counter in view:work.FSd1(verilog) instance tx_state[7:0] 
+@N: MO231 :"c:\users\akita\documents\fsd1\src\main.v":54:4:54:9|Found counter in view:work.FSd1(verilog) instance rx_byte[5:0] 
+@N: MO231 :"c:\users\akita\documents\fsd1\src\main.v":54:4:54:9|Found counter in view:work.FSd1(verilog) instance raw_cnt_work\[2\][11:0] 
+@N: MO231 :"c:\users\akita\documents\fsd1\src\main.v":54:4:54:9|Found counter in view:work.FSd1(verilog) instance raw_cnt_work\[1\][11:0] 
+@N: MO231 :"c:\users\akita\documents\fsd1\src\main.v":54:4:54:9|Found counter in view:work.FSd1(verilog) instance raw_cnt_work\[0\][11:0] 
+@N: MF179 :|Found 13 by 13 bit equality operator ('==') _l1\.un1_lo_cnt\[1\] (in view: work.FSd1(verilog))
+@N: MF179 :|Found 13 by 13 bit equality operator ('==') _l0\.un1_lo_cnt\[0\] (in view: work.FSd1(verilog))
+@N: MF179 :|Found 13 by 13 bit equality operator ('==') _l2\.un1_lo_cnt\[2\] (in view: work.FSd1(verilog))
+
+Starting factoring (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:07s; Memory used current: 223MB peak: 223MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 232MB peak: 232MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:08s; Memory used current: 227MB peak: 233MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:08s; Memory used current: 228MB peak: 233MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:09s; Memory used current: 228MB peak: 233MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:09s; Memory used current: 228MB peak: 233MB)
+
+@N: MO106 :"c:\users\akita\documents\fsd1\src\main.v":256:8:256:11|Found ROM rx_data_b[3:0] (in view: work.FSd1(verilog)) with 22 words by 4 bits.
+
+Finished preparing to map (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:09s; Memory used current: 229MB peak: 233MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:10s; Memory used current: 242MB peak: 242MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:10s		    -3.69ns		 863 /       547
+   2		0h:00m:10s		    -3.09ns		 848 /       547
+@N: FX271 :"c:\users\akita\documents\fsd1\src\main.v":136:12:136:15|Replicating instance data_b_10_sqmuxa (in view: work.FSd1(verilog)) with 9 loads 1 time to improve timing.
+@N: FX271 :"c:\users\akita\documents\fsd1\src\uart.v":15:4:15:9|Replicating instance itx8.r_busy (in view: work.FSd1(verilog)) with 13 loads 1 time to improve timing.
+@N: FX271 :"c:\users\akita\documents\fsd1\src\main.v":54:4:54:9|Replicating instance f_bcd_data_ready (in view: work.FSd1(verilog)) with 4 loads 1 time to improve timing.
+@N: FX271 :"c:\users\akita\documents\fsd1\src\main.v":54:4:54:9|Replicating instance f_bcd_converting (in view: work.FSd1(verilog)) with 88 loads 3 times to improve timing.
+Timing driven replication report
+Added 5 Registers via timing driven replication
+Added 2 LUTs via timing driven replication
+
+   3		0h:00m:12s		    -2.19ns		 869 /       552
+   4		0h:00m:12s		    -1.89ns		 870 /       552
+   5		0h:00m:12s		    -1.71ns		 872 /       552
+   6		0h:00m:12s		    -1.96ns		 873 /       552
+   7		0h:00m:12s		    -1.71ns		 873 /       552
+
+
+   8		0h:00m:13s		    -1.45ns		 890 /       552
+   9		0h:00m:13s		    -1.96ns		 890 /       552
+  10		0h:00m:13s		    -1.71ns		 890 /       552
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:13s; Memory used current: 249MB peak: 250MB)
+
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:13s; Memory used current: 250MB peak: 250MB)
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:14s; Memory used current: 172MB peak: 251MB)
+
+Writing Analyst data base C:\Users\akita\Documents\FSd1\impl\synthesize\rev_1\synwork\FSd1_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:15s; Memory used current: 249MB peak: 251MB)
+
+Writing Verilog Simulation files
+
+Writing scf file... (Real Time elapsed 0h:00m:17s; CPU Time elapsed 0h:00m:16s; Memory used current: 250MB peak: 251MB)
+
+@N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
+@N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
+
+Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:17s; CPU Time elapsed 0h:00m:16s; Memory used current: 250MB peak: 251MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:18s; CPU Time elapsed 0h:00m:17s; Memory used current: 247MB peak: 251MB)
+
+@W: MT420 |Found inferred clock FSd1|clk24M with period 10.28ns. Please declare a user-defined clock on port clk24M.
+
+
+##### START OF TIMING REPORT #####[
+# Timing report written on Sun Apr 19 15:03:01 2020
+#
+
+
+Top view:               FSd1
+Requested Frequency:    97.3 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: -1.815
+
+                   Requested     Estimated     Requested     Estimated                Clock        Clock                
+Starting Clock     Frequency     Frequency     Period        Period        Slack      Type         Group                
+------------------------------------------------------------------------------------------------------------------------
+FSd1|clk24M        97.3 MHz      82.7 MHz      10.283        12.097        -1.815     inferred     Autoconstr_clkgroup_0
+System             100.0 MHz     498.1 MHz     10.000        2.008         7.992      system       system_clkgroup      
+========================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                    |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+-----------------------------------------------------------------------------------------------------------------
+Starting     Ending       |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+-----------------------------------------------------------------------------------------------------------------
+System       FSd1|clk24M  |  10.283      7.993   |  No paths    -      |  No paths    -      |  No paths    -    
+FSd1|clk24M  System       |  10.283      5.383   |  No paths    -      |  No paths    -      |  No paths    -    
+FSd1|clk24M  FSd1|clk24M  |  10.283      -1.815  |  No paths    -      |  No paths    -      |  No paths    -    
+=================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: FSd1|clk24M
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                          Starting                                                    Arrival           
+Instance                  Reference       Type      Pin     Net                       Time        Slack 
+                          Clock                                                                         
+--------------------------------------------------------------------------------------------------------
+tx_state[1]               FSd1|clk24M     DFFRE     Q       tx_state[1]               0.367       -1.815
+tx_state[0]               FSd1|clk24M     DFFRE     Q       tx_state[0]               0.367       -1.747
+tx_state[2]               FSd1|clk24M     DFFRE     Q       tx_state[2]               0.367       -1.553
+tx_state[3]               FSd1|clk24M     DFFRE     Q       tx_state[3]               0.367       -1.538
+tx_state[4]               FSd1|clk24M     DFFRE     Q       tx_state[4]               0.367       -1.403
+tx_state[5]               FSd1|clk24M     DFFRE     Q       tx_state[5]               0.367       -0.740
+itx8.r_busy_fast          FSd1|clk24M     DFFRE     Q       r_busy_fast               0.367       -0.617
+f_bcd_data_ready_fast     FSd1|clk24M     DFFRE     Q       f_bcd_data_ready_fast     0.367       -0.550
+tx_start                  FSd1|clk24M     DFFR      Q       tx_start                  0.367       -0.340
+lo_cnt\[0\][0]            FSd1|clk24M     DFFR      Q       lo_cnt\[0\][0]            0.367       -0.251
+========================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                          Starting                                                     Required           
+Instance                  Reference       Type     Pin     Net                         Time         Slack 
+                          Clock                                                                           
+----------------------------------------------------------------------------------------------------------
+data_b[1]                 FSd1|clk24M     DFFE     D       data_b_40[1]                10.149       -1.815
+data_b[3]                 FSd1|clk24M     DFFE     D       data_b_40[3]                10.149       -1.815
+data_b[2]                 FSd1|clk24M     DFFE     D       data_b_40[2]                10.149       -1.680
+data_b[0]                 FSd1|clk24M     DFFE     D       data_b_40[0]                10.149       -0.914
+r_lo[0]                   FSd1|clk24M     DFF      D       r_lo_8[0]                   10.149       -0.251
+r_lo[1]                   FSd1|clk24M     DFF      D       r_lo_15[1]                  10.149       -0.251
+r_lo[2]                   FSd1|clk24M     DFF      D       r_lo_22[2]                  10.149       -0.251
+data_b[4]                 FSd1|clk24M     DFFE     D       data_b_40[4]                10.149       -0.222
+irx8.n_bit[3]             FSd1|clk24M     DFFR     D       n_bit_7[3]                  10.149       0.171 
+sig_cnt_work\[0\][23]     FSd1|clk24M     DFFR     D       sig_cnt_work\[0\]_s[23]     10.149       0.549 
+==========================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.283
+    - Setup time:                            0.133
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         10.149
+
+    - Propagation time:                      11.964
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -1.815
+
+    Number of logic level(s):                6
+    Starting point:                          tx_state[1] / Q
+    Ending point:                            data_b[1] / D
+    The start point is clocked by            FSd1|clk24M [rising] on pin CLK
+    The end   point is clocked by            FSd1|clk24M [rising] on pin CLK
+
+Instance / Net                    Pin      Pin               Arrival     No. of    
+Name                    Type      Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------
+tx_state[1]             DFFRE     Q        Out     0.367     0.367       -         
+tx_state[1]             Net       -        -       1.204     -           36        
+g0_23_1                 LUT3      I1       In      -         1.571       -         
+g0_23_1                 LUT3      F        Out     1.099     2.670       -         
+g0_23_1                 Net       -        -       1.021     -           2         
+data_b_40_m5_1_1[1]     LUT4      I0       In      -         3.691       -         
+data_b_40_m5_1_1[1]     LUT4      F        Out     1.032     4.723       -         
+data_b_40_m5_1_1[1]     Net       -        -       0.766     -           1         
+data_b_40_m5_1[1]       LUT4      I1       In      -         5.489       -         
+data_b_40_m5_1[1]       LUT4      F        Out     1.099     6.588       -         
+data_b_40_m5_1[1]       Net       -        -       1.021     -           2         
+data_b_40_1_1[1]        LUT4      I1       In      -         7.609       -         
+data_b_40_1_1[1]        LUT4      F        Out     1.099     8.708       -         
+data_b_40_1_1[1]        Net       -        -       0.766     -           1         
+data_b_40_1[1]          LUT4      I3       In      -         9.473       -         
+data_b_40_1[1]          LUT4      F        Out     0.626     10.099      -         
+data_b_40_1[1]          Net       -        -       0.766     -           1         
+data_b_40[1]            LUT3      I1       In      -         10.865      -         
+data_b_40[1]            LUT3      F        Out     1.099     11.964      -         
+data_b_40[1]            Net       -        -       0.000     -           1         
+data_b[1]               DFFE      D        In      -         11.964      -         
+===================================================================================
+Total path delay (propagation time + setup) of 12.097 is 6.554(54.2%) logic and 5.543(45.8%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 2: 
+      Requested Period:                      10.283
+    - Setup time:                            0.133
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         10.149
+
+    - Propagation time:                      11.964
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -1.815
+
+    Number of logic level(s):                6
+    Starting point:                          tx_state[1] / Q
+    Ending point:                            data_b[3] / D
+    The start point is clocked by            FSd1|clk24M [rising] on pin CLK
+    The end   point is clocked by            FSd1|clk24M [rising] on pin CLK
+
+Instance / Net                    Pin      Pin               Arrival     No. of    
+Name                    Type      Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------
+tx_state[1]             DFFRE     Q        Out     0.367     0.367       -         
+tx_state[1]             Net       -        -       1.204     -           36        
+g0_23_1                 LUT3      I1       In      -         1.571       -         
+g0_23_1                 LUT3      F        Out     1.099     2.670       -         
+g0_23_1                 Net       -        -       1.021     -           2         
+data_b_40_m5_1_1[1]     LUT4      I0       In      -         3.691       -         
+data_b_40_m5_1_1[1]     LUT4      F        Out     1.032     4.723       -         
+data_b_40_m5_1_1[1]     Net       -        -       0.766     -           1         
+data_b_40_m5_1[1]       LUT4      I1       In      -         5.489       -         
+data_b_40_m5_1[1]       LUT4      F        Out     1.099     6.588       -         
+data_b_40_m5_1[1]       Net       -        -       1.021     -           2         
+data_b_40_d_1[3]        LUT4      I1       In      -         7.609       -         
+data_b_40_d_1[3]        LUT4      F        Out     1.099     8.708       -         
+data_b_40_d_1[3]        Net       -        -       0.766     -           1         
+data_b_40_d[3]          LUT4      I3       In      -         9.473       -         
+data_b_40_d[3]          LUT4      F        Out     0.626     10.099      -         
+data_b_40_d[3]          Net       -        -       0.766     -           1         
+data_b_40[3]            LUT3      I1       In      -         10.865      -         
+data_b_40[3]            LUT3      F        Out     1.099     11.964      -         
+data_b_40[3]            Net       -        -       0.000     -           1         
+data_b[3]               DFFE      D        In      -         11.964      -         
+===================================================================================
+Total path delay (propagation time + setup) of 12.097 is 6.554(54.2%) logic and 5.543(45.8%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 3: 
+      Requested Period:                      10.283
+    - Setup time:                            0.133
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         10.149
+
+    - Propagation time:                      11.897
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -1.747
+
+    Number of logic level(s):                6
+    Starting point:                          tx_state[0] / Q
+    Ending point:                            data_b[1] / D
+    The start point is clocked by            FSd1|clk24M [rising] on pin CLK
+    The end   point is clocked by            FSd1|clk24M [rising] on pin CLK
+
+Instance / Net                    Pin      Pin               Arrival     No. of    
+Name                    Type      Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------
+tx_state[0]             DFFRE     Q        Out     0.367     0.367       -         
+tx_state[0]             Net       -        -       1.204     -           35        
+g0_23_1                 LUT3      I0       In      -         1.571       -         
+g0_23_1                 LUT3      F        Out     1.032     2.603       -         
+g0_23_1                 Net       -        -       1.021     -           2         
+data_b_40_m5_1_1[1]     LUT4      I0       In      -         3.624       -         
+data_b_40_m5_1_1[1]     LUT4      F        Out     1.032     4.656       -         
+data_b_40_m5_1_1[1]     Net       -        -       0.766     -           1         
+data_b_40_m5_1[1]       LUT4      I1       In      -         5.421       -         
+data_b_40_m5_1[1]       LUT4      F        Out     1.099     6.521       -         
+data_b_40_m5_1[1]       Net       -        -       1.021     -           2         
+data_b_40_1_1[1]        LUT4      I1       In      -         7.542       -         
+data_b_40_1_1[1]        LUT4      F        Out     1.099     8.640       -         
+data_b_40_1_1[1]        Net       -        -       0.766     -           1         
+data_b_40_1[1]          LUT4      I3       In      -         9.406       -         
+data_b_40_1[1]          LUT4      F        Out     0.626     10.032      -         
+data_b_40_1[1]          Net       -        -       0.766     -           1         
+data_b_40[1]            LUT3      I1       In      -         10.798      -         
+data_b_40[1]            LUT3      F        Out     1.099     11.897      -         
+data_b_40[1]            Net       -        -       0.000     -           1         
+data_b[1]               DFFE      D        In      -         11.897      -         
+===================================================================================
+Total path delay (propagation time + setup) of 12.030 is 6.487(53.9%) logic and 5.543(46.1%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 4: 
+      Requested Period:                      10.283
+    - Setup time:                            0.133
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         10.149
+
+    - Propagation time:                      11.897
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -1.747
+
+    Number of logic level(s):                6
+    Starting point:                          tx_state[0] / Q
+    Ending point:                            data_b[3] / D
+    The start point is clocked by            FSd1|clk24M [rising] on pin CLK
+    The end   point is clocked by            FSd1|clk24M [rising] on pin CLK
+
+Instance / Net                    Pin      Pin               Arrival     No. of    
+Name                    Type      Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------
+tx_state[0]             DFFRE     Q        Out     0.367     0.367       -         
+tx_state[0]             Net       -        -       1.204     -           35        
+g0_23_1                 LUT3      I0       In      -         1.571       -         
+g0_23_1                 LUT3      F        Out     1.032     2.603       -         
+g0_23_1                 Net       -        -       1.021     -           2         
+data_b_40_m5_1_1[1]     LUT4      I0       In      -         3.624       -         
+data_b_40_m5_1_1[1]     LUT4      F        Out     1.032     4.656       -         
+data_b_40_m5_1_1[1]     Net       -        -       0.766     -           1         
+data_b_40_m5_1[1]       LUT4      I1       In      -         5.421       -         
+data_b_40_m5_1[1]       LUT4      F        Out     1.099     6.521       -         
+data_b_40_m5_1[1]       Net       -        -       1.021     -           2         
+data_b_40_d_1[3]        LUT4      I1       In      -         7.542       -         
+data_b_40_d_1[3]        LUT4      F        Out     1.099     8.640       -         
+data_b_40_d_1[3]        Net       -        -       0.766     -           1         
+data_b_40_d[3]          LUT4      I3       In      -         9.406       -         
+data_b_40_d[3]          LUT4      F        Out     0.626     10.032      -         
+data_b_40_d[3]          Net       -        -       0.766     -           1         
+data_b_40[3]            LUT3      I1       In      -         10.798      -         
+data_b_40[3]            LUT3      F        Out     1.099     11.897      -         
+data_b_40[3]            Net       -        -       0.000     -           1         
+data_b[3]               DFFE      D        In      -         11.897      -         
+===================================================================================
+Total path delay (propagation time + setup) of 12.030 is 6.487(53.9%) logic and 5.543(46.1%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 5: 
+      Requested Period:                      10.283
+    - Setup time:                            0.133
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         10.149
+
+    - Propagation time:                      11.830
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -1.680
+
+    Number of logic level(s):                6
+    Starting point:                          tx_state[1] / Q
+    Ending point:                            data_b[2] / D
+    The start point is clocked by            FSd1|clk24M [rising] on pin CLK
+    The end   point is clocked by            FSd1|clk24M [rising] on pin CLK
+
+Instance / Net                   Pin      Pin               Arrival     No. of    
+Name                   Type      Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------
+tx_state[1]            DFFRE     Q        Out     0.367     0.367       -         
+tx_state[1]            Net       -        -       1.204     -           36        
+g0_0_a3_2              LUT3      I1       In      -         1.571       -         
+g0_0_a3_2              LUT3      F        Out     1.099     2.670       -         
+g0_0_a3_2              Net       -        -       1.021     -           3         
+g0_7_2                 LUT4      I0       In      -         3.691       -         
+g0_7_2                 LUT4      F        Out     1.032     4.723       -         
+g0_7_2                 Net       -        -       1.021     -           2         
+data_b_40_1_1_1[2]     LUT4      I0       In      -         5.744       -         
+data_b_40_1_1_1[2]     LUT4      F        Out     1.032     6.776       -         
+data_b_40_1_1_1[2]     Net       -        -       0.766     -           1         
+data_b_40_1_1[2]       LUT4      I0       In      -         7.542       -         
+data_b_40_1_1[2]       LUT4      F        Out     1.032     8.573       -         
+data_b_40_1_1[2]       Net       -        -       0.766     -           1         
+data_b_40_1_0[2]       LUT4      I3       In      -         9.339       -         
+data_b_40_1_0[2]       LUT4      F        Out     0.626     9.965       -         
+data_b_40_1_0[2]       Net       -        -       0.766     -           1         
+data_b_40[2]           LUT4      I1       In      -         10.731      -         
+data_b_40[2]           LUT4      F        Out     1.099     11.830      -         
+data_b_40[2]           Net       -        -       0.000     -           1         
+data_b[2]              DFFE      D        In      -         11.830      -         
+==================================================================================
+Total path delay (propagation time + setup) of 11.963 is 6.420(53.7%) logic and 5.543(46.3%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+
+====================================
+Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                              Starting                                                     Arrival          
+Instance                      Reference     Type     Pin     Net                           Time        Slack
+                              Clock                                                                         
+------------------------------------------------------------------------------------------------------------
+rst_n_c_i                     System        INV      O       rst_n_c_i                     0.000       7.992
+irx8.CO0_i                    System        INV      O       CO0_i                         0.000       9.129
+f_bcd_converting_l            System        INV      O       f_bcd_converting_l            0.000       9.129
+f_bcd_converting_l_0          System        INV      O       f_bcd_converting_l_0          0.000       9.129
+f_bcd_converting_l_1          System        INV      O       f_bcd_converting_l_1          0.000       9.129
+f_bcd_converting_l_2          System        INV      O       f_bcd_converting_l_2          0.000       9.129
+f_bcd_converting_rep1_l       System        INV      O       f_bcd_converting_rep1_l       0.000       9.129
+f_bcd_converting_rep2_l       System        INV      O       f_bcd_converting_rep2_l       0.000       9.129
+f_bcd_converting_rep2_l_0     System        INV      O       f_bcd_converting_rep2_l_0     0.000       9.129
+f_bcd_converting_rep2_l_1     System        INV      O       f_bcd_converting_rep2_l_1     0.000       9.129
+============================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                Starting                                       Required          
+Instance        Reference     Type     Pin       Net           Time         Slack
+                Clock                                                            
+---------------------------------------------------------------------------------
+itx8.cnt[0]     System        DFFR     RESET     rst_n_c_i     10.149       7.992
+irx8.cnt[0]     System        DFFR     RESET     rst_n_c_i     10.149       7.992
+itx8.cnt[1]     System        DFFR     RESET     rst_n_c_i     10.149       7.992
+irx8.cnt[1]     System        DFFR     RESET     rst_n_c_i     10.149       7.992
+itx8.cnt[2]     System        DFFR     RESET     rst_n_c_i     10.149       7.992
+irx8.cnt[2]     System        DFFR     RESET     rst_n_c_i     10.149       7.992
+itx8.cnt[3]     System        DFFR     RESET     rst_n_c_i     10.149       7.992
+irx8.cnt[3]     System        DFFR     RESET     rst_n_c_i     10.149       7.992
+itx8.cnt[4]     System        DFFR     RESET     rst_n_c_i     10.149       7.992
+irx8.cnt[4]     System        DFFR     RESET     rst_n_c_i     10.149       7.992
+=================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.283
+    - Setup time:                            0.133
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         10.149
+
+    - Propagation time:                      2.157
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 7.992
+
+    Number of logic level(s):                0
+    Starting point:                          rst_n_c_i / O
+    Ending point:                            itx8.cnt[0] / RESET
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            FSd1|clk24M [rising] on pin CLK
+
+Instance / Net              Pin       Pin               Arrival     No. of    
+Name               Type     Name      Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------
+rst_n_c_i          INV      O         Out     0.000     0.000       -         
+rst_n_c_i          Net      -         -       2.157     -           317       
+itx8.cnt[0]        DFFR     RESET     In      -         2.157       -         
+==============================================================================
+Total path delay (propagation time + setup) of 2.290 is 0.133(5.8%) logic and 2.157(94.2%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+
+Finished final timing analysis (Real Time elapsed 0h:00m:19s; CPU Time elapsed 0h:00m:18s; Memory used current: 248MB peak: 251MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:19s; CPU Time elapsed 0h:00m:18s; Memory used current: 248MB peak: 251MB)
+
+---------------------------------------
+Resource Usage Report for FSd1 
+
+Mapping to part: gw1n_1qfn48-6
+Cell usage:
+ALU             281 uses
+DFF             42 uses
+DFFE            47 uses
+DFFR            219 uses
+DFFRE           212 uses
+DFFS            8 uses
+DFFSE           24 uses
+GSR             1 use
+INV             32 uses
+MUX2_LUT5       23 uses
+MUX2_LUT6       4 uses
+MUX2_LUT7       1 use
+LUT2            234 uses
+LUT3            169 uses
+LUT4            287 uses
+
+I/O ports: 18
+I/O primitives: 18
+IBUF           9 uses
+OBUF           9 uses
+
+I/O Register bits:                  0
+Register bits not including I/Os:   552 of 864 (63%)
+Total load per clock:
+   FSd1|clk24M: 552
+
+@S |Mapping Summary:
+Total  LUTs: 690 (59%)
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:19s; CPU Time elapsed 0h:00m:18s; Memory used current: 76MB peak: 251MB)
+
+Process took 0h:00m:19s realtime, 0h:00m:18s cputime
+# Sun Apr 19 15:03:02 2020
+
+###########################################################]

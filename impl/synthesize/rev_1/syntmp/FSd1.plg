@@ -1,0 +1,17 @@
+@P:  Worst Slack : -1.815
+@P:  FSd1|clk24M - Estimated Frequency : 82.7 MHz
+@P:  FSd1|clk24M - Requested Frequency : 97.3 MHz
+@P:  FSd1|clk24M - Estimated Period : 12.097
+@P:  FSd1|clk24M - Requested Period : 10.283
+@P:  FSd1|clk24M - Slack : -1.815
+@P:  System - Estimated Frequency : 498.1 MHz
+@P:  System - Requested Frequency : 100.0 MHz
+@P:  System - Estimated Period : 2.008
+@P:  System - Requested Period : 10.000
+@P:  System - Slack : 7.992
+@P: FSd1 Part : gw1n_1qfn48-6
+@P: FSd1 I/O primitives : 18
+@P: FSd1 I/O Register bits : 0
+@P: FSd1 Register bits (Non I/O) : 552 (63%)
+@P: FSd1 Total Luts : 690 of 800 (59%)
+@P:  CPU Time : 0h:00m:18s

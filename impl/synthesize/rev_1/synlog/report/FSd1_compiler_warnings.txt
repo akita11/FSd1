@@ -1,0 +1,4 @@
+@W: CL271 :"C:\Users\akita\Documents\FSd1\src\uart.v":75:4:75:9|Pruning unused bits 1 to 0 of rdata[9:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CG1340 :"C:\Users\akita\Documents\FSd1\src\main.v":121:66:121:91|Index into variable bcd_in_data could be out of range ; a simulation mismatch is possible.
+@W: CL169 :"C:\Users\akita\Documents\FSd1\src\main.v":54:4:54:9|Pruning unused register f_tx_data_ready. Make sure that there are no unused intermediate registers.
+

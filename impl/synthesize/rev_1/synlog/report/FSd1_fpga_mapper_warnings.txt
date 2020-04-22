@@ -1,0 +1,3 @@
+@W: FA239 :"c:\users\akita\documents\fsd1\src\main.v":232:8:232:11|ROM data_h[6:0] (in view: work.FSd1(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@W: FA239 :"c:\users\akita\documents\fsd1\src\main.v":232:8:232:11|ROM data_h[6:0] (in view: work.FSd1(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@W: MT420 |Found inferred clock FSd1|clk24M with period 10.28ns. Please declare a user-defined clock on port clk24M.

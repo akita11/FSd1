@@ -1,0 +1,37 @@
+IO_LOC "clk24M" 35;
+IO_LOC "rst_n" 15;
+IO_LOC "sig_in[0]" 33; // MSPI pin
+IO_LOC "sig_in[1]" 34; // MSPI pin
+//IO_LOC "sig_in[2]" 16; // also LED_G
+IO_LOC "sig_in[2]" 32; // moved from 16 to 32
+IO_LOC "lo_out[0]" 10;
+IO_LOC "lo_out[1]" 46;
+IO_LOC "lo_out[2]" 5;
+IO_LOC "mix_in[0]" 38;
+IO_LOC "mix_in[1]" 39;
+IO_LOC "mix_in[2]" 40;
+IO_LOC "mix_out[0]" 41;
+IO_LOC "mix_out[1]" 42;
+IO_LOC "mix_out[2]" 43;
+IO_LOC "RXD" 9; // DONE pin
+IO_LOC "TXD" 8; // RECONFIG_N pin
+IO_LOC "led[0]" 17; // LED_B
+IO_LOC "led[1]" 18; // LED_R
+IO_PORT "clk24M" IO_TYPE=LVCMOS33;
+IO_PORT "rst_n" IO_TYPE=LVCMOS33;
+IO_PORT "sig_in[0]" IO_TYPE=LVCMOS33;
+IO_PORT "sig_in[1]" IO_TYPE=LVCMOS33;
+IO_PORT "sig_in[2]" IO_TYPE=LVCMOS33;
+IO_PORT "lo_out[0]" IO_TYPE=LVCMOS33;
+IO_PORT "lo_out[1]" IO_TYPE=LVCMOS33;
+IO_PORT "lo_out[2]" IO_TYPE=LVCMOS33;
+IO_PORT "mix_in[0]" IO_TYPE=LVCMOS33;
+IO_PORT "mix_in[1]" IO_TYPE=LVCMOS33;
+IO_PORT "mix_in[2]" IO_TYPE=LVCMOS33;
+IO_PORT "mix_out[0]" IO_TYPE=LVCMOS33;
+IO_PORT "mix_out[1]" IO_TYPE=LVCMOS33;
+IO_PORT "mix_out[2]" IO_TYPE=LVCMOS33;
+IO_PORT "RXD" IO_TYPE=LVCMOS33;
+IO_PORT "TXD" IO_TYPE=LVCMOS33;
+IO_PORT "led[0]" IO_TYPE=LVCMOS33;
+IO_PORT "led[1]" IO_TYPE=LVCMOS33;
